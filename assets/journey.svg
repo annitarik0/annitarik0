@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 360" width="1280" height="360" role="img" aria-label="The road so far. 2021: Networks and Computer Systems diploma, ILEIC Aït Melloul. 2023: network intern at INISEA and digital marketing intern at ESTELAR. 2024: Bachelor's in Web and Mobile Development at FST Béni Mellal, and graphic designer at Rank Up. 2025: Chinese program in Chengdu. 2026: AWS cloud and app design at Orange Digital Center. Next: a Master's in Artificial Intelligence.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0B1220"/><stop offset="1" stop-color="#160F2E"/></linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E63946"/><stop offset=".35" stop-color="#4CC9F0"/><stop offset=".7" stop-color="#FFB703"/><stop offset="1" stop-color="#B388FF"/>
+    </linearGradient>
+    <radialGradient id="comet" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".3" stop-color="#7DE3FF"/><stop offset="1" stop-color="#7DE3FF" stop-opacity="0"/></radialGradient>
+    <clipPath id="c"><rect width="1280" height="360" rx="24"/></clipPath>
+    <style>
+      .sans { font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+      .mono { font-family: ui-monospace, "Cascadia Code", Consolas, Menlo, monospace; }
+      .yr { font-size: 22px; font-weight: 800; fill: #F5F7FB; }
+      .t { font-size: 15px; font-weight: 600; fill: #E7ECF5; }
+      .s { font-size: 13px; fill: #8E9AB2; }
+      .flow { stroke-dasharray: 2 14; animation: flow 1.4s linear infinite; }
+      @keyframes flow { to { stroke-dashoffset: -32; } }
+      .stop { transform-box: fill-box; transform-origin: center; animation: pop 8s ease-in-out infinite; }
+      @keyframes pop { 0%, 100% { transform: scale(1); } 5% { transform: scale(1.6); } 10% { transform: scale(1); } }
+      .s1 { animation-delay: .1s; } .s2 { animation-delay: 1.4s; } .s3 { animation-delay: 2.8s; } .s4 { animation-delay: 4.2s; } .s5 { animation-delay: 5.6s; }
+      .next { animation: glow 2s ease-in-out infinite; }
+      @keyframes glow { 0%, 100% { opacity: .55; } 50% { opacity: 1; } }
+      .caret { animation: blink 1s steps(1) infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+      @media (prefers-reduced-motion: reduce) { .flow, .stop, .next, .caret { animation: none; } }
+    </style>
+  </defs>
+  <g clip-path="url(#c)">
+    <rect width="1280" height="360" fill="url(#bg)"/>
+    <text class="mono" x="40" y="40" font-size="13" fill="#7DE3FF" letter-spacing="2">THE ROAD SO FAR</text>
+
+    <path id="road" d="M60 196 C160 196 170 150 240 150 S340 236 440 236 S560 150 640 150 S760 236 840 236 S960 150 1040 150 S1160 196 1230 196" fill="none" stroke="url(#road)" stroke-width="5" stroke-linecap="round" stroke-opacity=".35"/>
+    <path d="M60 196 C160 196 170 150 240 150 S340 236 440 236 S560 150 640 150 S760 236 840 236 S960 150 1040 150 S1160 196 1230 196" fill="none" stroke="url(#road)" stroke-width="3" stroke-linecap="round" class="flow"/>
+
+    <circle r="14" fill="url(#comet)">
+      <animateMotion dur="8s" repeatCount="indefinite"><mpath href="#road"/></animateMotion>
+    </circle>
+
+    <!-- 2021 -->
+    <circle class="stop s1" cx="240" cy="150" r="8" fill="#E63946" stroke="#0B1220" stroke-width="3"/>
+    <g class="sans" text-anchor="middle">
+      <text class="yr" x="240" y="70">2021</text>
+      <text class="t" x="240" y="92">Networks diploma</text>
+      <text class="s" x="240" y="112">ILEIC · Aït Melloul</text>
+    </g>
+    <!-- 2023 -->
+    <circle class="stop s2" cx="440" cy="236" r="8" fill="#F77F8A" stroke="#0B1220" stroke-width="3"/>
+    <g class="sans" text-anchor="middle">
+      <text class="yr" x="440" y="290">2023</text>
+      <text class="t" x="440" y="312">Network + marketing intern</text>
+      <text class="s" x="440" y="332">INISEA · ESTELAR</text>
+    </g>
+    <!-- 2024 -->
+    <circle class="stop s3" cx="640" cy="150" r="8" fill="#4CC9F0" stroke="#0B1220" stroke-width="3"/>
+    <g class="sans" text-anchor="middle">
+      <text class="yr" x="640" y="70">2024</text>
+      <text class="t" x="640" y="92">Bachelor's, Web &amp; Mobile</text>
+      <text class="s" x="640" y="112">FST Béni Mellal · designer at Rank Up</text>
+    </g>
+    <!-- 2025 -->
+    <circle class="stop s4" cx="840" cy="236" r="8" fill="#FFB703" stroke="#0B1220" stroke-width="3"/>
+    <g class="sans" text-anchor="middle">
+      <text class="yr" x="840" y="290">2025</text>
+      <text class="t" x="840" y="312">Learning Chinese</text>
+      <text class="s" x="840" y="332">Chengdu Normal University</text>
+    </g>
+    <!-- 2026 -->
+    <circle class="stop s5" cx="1040" cy="150" r="8" fill="#FF9F1C" stroke="#0B1220" stroke-width="3"/>
+    <g class="sans" text-anchor="middle">
+      <text class="yr" x="1040" y="70">2026</text>
+      <text class="t" x="1040" y="92">AWS + App Design</text>
+      <text class="s" x="1040" y="112">Orange Digital Center</text>
+    </g>
+    <!-- next -->
+    <g class="next">
+      <circle cx="1230" cy="196" r="12" fill="none" stroke="#B388FF" stroke-width="2" stroke-dasharray="4 4"/>
+      <circle cx="1230" cy="196" r="5" fill="#B388FF"/>
+    </g>
+    <g class="sans" text-anchor="end">
+      <text x="1236" y="250" font-size="15" font-weight="800" fill="#CDB6FF">NEXT</text>
+      <text class="t" x="1236" y="272">Master's in AI<tspan class="caret" fill="#B388FF"> ▋</tspan></text>
+    </g>
+  </g>
+</svg>

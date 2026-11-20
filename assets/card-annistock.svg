@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" width="600" height="320" role="img" aria-label="ANNISTOCK: an inventory management system, my Bachelor's final project. Built with Laravel, PHP, MySQL and Chart.js.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1220"/><stop offset="1" stop-color="#2B1630"/></linearGradient>
+    <linearGradient id="bar" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#C2185B"/><stop offset="1" stop-color="#FF6B9A"/></linearGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF6B9A" stop-opacity=".35"/><stop offset="1" stop-color="#FF6B9A" stop-opacity="0"/></linearGradient>
+    <clipPath id="c"><rect width="600" height="320" rx="22"/></clipPath>
+    <style>
+      .sans { font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+      .mono { font-family: ui-monospace, "Cascadia Code", Consolas, Menlo, monospace; }
+      .g { fill: url(#bar); transform-box: fill-box; transform-origin: 50% 100%; animation: grow 5s cubic-bezier(.2,.8,.2,1) infinite; }
+      @keyframes grow { 0% { transform: scaleY(0); } 25%, 85% { transform: scaleY(1); } 100% { transform: scaleY(0); } }
+      .line { stroke-dasharray: 400; stroke-dashoffset: 400; animation: draw 5s ease-out infinite; }
+      @keyframes draw { 0%, 15% { stroke-dashoffset: 400; } 45%, 85% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 400; } }
+      .box { animation: drop 5s ease-in-out infinite; }
+      @keyframes drop { 0% { transform: translateY(-30px); opacity: 0; } 15%, 85% { transform: translateY(0); opacity: 1; } 100% { transform: translateY(0); opacity: 0; } }
+      @media (prefers-reduced-motion: reduce) { .g, .line, .box { animation: none; } .line { stroke-dashoffset: 0; } }
+    </style>
+  </defs>
+  <g clip-path="url(#c)">
+    <rect width="600" height="320" fill="url(#bg)"/>
+    <rect x=".5" y=".5" width="599" height="319" rx="22" fill="none" stroke="#FF6B9A" stroke-opacity=".28"/>
+
+    <text class="mono" x="32" y="44" font-size="13" fill="#FF8FB1" letter-spacing="2">03 · WEB APP</text>
+    <text class="sans" x="32" y="92" font-size="40" font-weight="800" fill="#F5F7FB" letter-spacing="-1">ANNISTOCK</text>
+    <text class="sans" x="32" y="126" font-size="17" fill="#C8B6CF">Stock management that tells you</text>
+    <text class="sans" x="32" y="148" font-size="17" fill="#C8B6CF">what to reorder before it runs out.</text>
+    <text class="sans" x="32" y="186" font-size="14" fill="#8E7D96">Bachelor's final project</text>
+    <g class="mono" font-size="12" transform="translate(32 268)">
+      <rect width="74" height="26" rx="13" fill="#FFFFFF" fill-opacity=".07"/><text x="37" y="17" text-anchor="middle" fill="#E7ECF5">Laravel</text>
+      <rect x="82" width="64" height="26" rx="13" fill="#FFFFFF" fill-opacity=".07"/><text x="114" y="17" text-anchor="middle" fill="#E7ECF5">MySQL</text>
+      <rect x="154" width="84" height="26" rx="13" fill="#FFFFFF" fill-opacity=".07"/><text x="196" y="17" text-anchor="middle" fill="#E7ECF5">Chart.js</text>
+    </g>
+
+    <!-- dashboard -->
+    <g transform="translate(340 56)">
+      <rect width="232" height="212" rx="16" fill="#0B1220" fill-opacity=".7" stroke="#FFFFFF" stroke-opacity=".1"/>
+      <circle cx="18" cy="18" r="4" fill="#FF5F57"/><circle cx="32" cy="18" r="4" fill="#FEBC2E"/><circle cx="46" cy="18" r="4" fill="#28C840"/>
+      <g stroke="#FFFFFF" stroke-opacity=".06"><line x1="20" y1="70" x2="212" y2="70"/><line x1="20" y1="110" x2="212" y2="110"/><line x1="20" y1="150" x2="212" y2="150"/></g>
+      <g transform="translate(26 190)">
+        <rect class="g" x="0"   y="-70"  width="20" height="70"  rx="4" style="animation-delay:0s"/>
+        <rect class="g" x="32"  y="-104" width="20" height="104" rx="4" style="animation-delay:.08s"/>
+        <rect class="g" x="64"  y="-56"  width="20" height="56"  rx="4" style="animation-delay:.16s"/>
+        <rect class="g" x="96"  y="-128" width="20" height="128" rx="4" style="animation-delay:.24s"/>
+        <rect class="g" x="128" y="-92"  width="20" height="92"  rx="4" style="animation-delay:.32s"/>
+        <rect class="g" x="160" y="-140" width="20" height="140" rx="4" style="animation-delay:.4s"/>
+      </g>
+      <path d="M36 140 L68 104 L100 150 L132 76 L164 116 L196 60 V190 H36 Z" fill="url(#area)"/>
+      <path class="line" d="M36 140 L68 104 L100 150 L132 76 L164 116 L196 60" fill="none" stroke="#FFD6E3" stroke-width="2.5" stroke-linejoin="round"/>
+      <g class="box" transform="translate(178 30)">
+        <rect width="38" height="22" rx="6" fill="#28C840" fill-opacity=".18" stroke="#28C840" stroke-opacity=".6"/>
+        <text class="mono" x="19" y="15" font-size="11" text-anchor="middle" fill="#8FE3B0">+24%</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" width="600" height="320" role="img" aria-label="Heartbeat monitor: a real-time heart-rate monitor built with Arduino and biomedical sensors, my diploma project.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1220"/><stop offset="1" stop-color="#2A1014"/></linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FF4D5E" stop-opacity="0"/><stop offset=".85" stop-color="#FF4D5E"/><stop offset="1" stop-color="#FFC2C8"/></linearGradient>
+    <pattern id="grid" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M16 0H0V16" fill="none" stroke="#FF4D5E" stroke-opacity=".08"/></pattern>
+    <clipPath id="c"><rect width="600" height="320" rx="22"/></clipPath>
+    <clipPath id="scope"><rect x="300" y="60" width="272" height="160" rx="12"/></clipPath>
+    <style>
+      .sans { font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+      .mono { font-family: ui-monospace, "Cascadia Code", Consolas, Menlo, monospace; }
+      .ecg { animation: scroll 2s linear infinite; }
+      @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-136px); } }
+      .heart { transform-box: fill-box; transform-origin: center; animation: beat 1s ease-in-out infinite; }
+      @keyframes beat { 0%, 100% { transform: scale(1); } 12% { transform: scale(1.25); } 24% { transform: scale(1); } 36% { transform: scale(1.15); } 50% { transform: scale(1); } }
+      .led { animation: led 1s steps(1) infinite; }
+      @keyframes led { 0%, 20% { opacity: 1; } 21%, 100% { opacity: .2; } }
+      @media (prefers-reduced-motion: reduce) { .ecg, .heart, .led { animation: none; } }
+    </style>
+  </defs>
+  <g clip-path="url(#c)">
+    <rect width="600" height="320" fill="url(#bg)"/>
+    <rect x=".5" y=".5" width="599" height="319" rx="22" fill="none" stroke="#FF4D5E" stroke-opacity=".28"/>
+
+    <text class="mono" x="32" y="44" font-size="13" fill="#FF8A93" letter-spacing="2">04 · HARDWARE</text>
+    <text class="sans" x="32" y="92" font-size="40" font-weight="800" fill="#F5F7FB" letter-spacing="-1">Heartbeat</text>
+    <text class="sans" x="32" y="126" font-size="17" fill="#D6B8BC">Real-time heart-rate monitor</text>
+    <text class="sans" x="32" y="148" font-size="17" fill="#D6B8BC">with biomedical sensors.</text>
+    <text class="sans" x="32" y="186" font-size="14" fill="#9C7E83">Technician diploma project</text>
+    <g class="mono" font-size="12" transform="translate(32 268)">
+      <rect width="74" height="26" rx="13" fill="#FFFFFF" fill-opacity=".07"/><text x="37" y="17" text-anchor="middle" fill="#E7ECF5">Arduino</text>
+      <rect x="82" width="74" height="26" rx="13" fill="#FFFFFF" fill-opacity=".07"/><text x="119" y="17" text-anchor="middle" fill="#E7ECF5">C / C++</text>
+      <rect x="164" width="76" height="26" rx="13" fill="#FFFFFF" fill-opacity=".07"/><text x="202" y="17" text-anchor="middle" fill="#E7ECF5">sensors</text>
+    </g>
+
+    <!-- oscilloscope -->
+    <rect x="300" y="60" width="272" height="160" rx="12" fill="#07080D"/>
+    <rect x="300" y="60" width="272" height="160" fill="url(#grid)" clip-path="url(#scope)"/>
+    <g clip-path="url(#scope)">
+      <path class="ecg" d="M300 150 h40 l8 -6 l8 6 h10 l6 18 l10 -86 l10 94 l8 -26 h20 l10 -10 l10 10 h36 l8 -6 l8 6 h10 l6 18 l10 -86 l10 94 l8 -26 h20 l10 -10 l10 10 h36 l8 -6 l8 6 h10 l6 18 l10 -86 l10 94 l8 -26 h20 l10 -10 l10 10 h40" fill="none" stroke="url(#fade)" stroke-width="2.5" stroke-linejoin="round"/>
+    </g>
+    <rect x="300.5" y="60.5" width="271" height="159" rx="12" fill="none" stroke="#FFFFFF" stroke-opacity=".1"/>
+
+    <g transform="translate(300 236)">
+      <path class="heart" d="M14 4 C14 -2 6 -4 3 1 C0 -4 -8 -2 -8 4 C-8 10 3 16 3 16 C3 16 14 10 14 4 Z" fill="#FF4D5E" transform="translate(8 6)"/>
+      <text class="sans" x="40" y="22" font-size="26" font-weight="800" fill="#F5F7FB">72</text>
+      <text class="mono" x="78" y="22" font-size="13" fill="#D6B8BC">BPM</text>
+      <circle class="led" cx="262" cy="14" r="5" fill="#28C840"/>
+      <text class="mono" x="252" y="19" font-size="12" fill="#8FE3B0" text-anchor="end">live</text>
+    </g>
+  </g>
+</svg>
