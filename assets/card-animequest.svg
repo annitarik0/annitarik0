@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" width="600" height="320" role="img" aria-label="Anime Quest: my first website, an anime figure shop, rebuilt as a game with five stages, a Three.js title world and a pixel hero. Built with HTML, CSS, JavaScript and Three.js.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1220"/><stop offset="1" stop-color="#2A1A0E"/></linearGradient>
+    <radialGradient id="orb" cx=".38" cy=".32" r=".75"><stop offset="0" stop-color="#FFB35C"/><stop offset=".6" stop-color="#FF7A1A"/><stop offset="1" stop-color="#D9520B"/></radialGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FF7A1A" stop-opacity=".35"/><stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/></radialGradient>
+    <clipPath id="c"><rect width="600" height="320" rx="22"/></clipPath>
+    <style>
+      .sans { font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+      .mono { font-family: ui-monospace, "Cascadia Code", Consolas, Menlo, monospace; }
+      .bob { animation: bob 3.2s ease-in-out infinite; }
+      @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+      .blink { animation: blink 1.1s steps(1, end) infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+      @media (prefers-reduced-motion: reduce) { .bob, .blink { animation: none; } }
+    </style>
+  </defs>
+  <g clip-path="url(#c)">
+    <rect width="600" height="320" fill="url(#bg)"/>
+    <rect x=".5" y=".5" width="599" height="319" rx="22" fill="none" stroke="#FF7A1A" stroke-opacity=".3"/>
+
+    <text class="mono" x="32" y="44" font-size="13" fill="#FFB35C" letter-spacing="2">05 · GAME WEBSITE</text>
+    <text class="sans" x="32" y="92" font-size="40" font-weight="800" fill="#F5F7FB" letter-spacing="-1">Anime Quest</text>
+    <text class="sans" x="32" y="126" font-size="17" fill="#D9C7B8">My first website, a figure shop,</text>
+    <text class="sans" x="32" y="148" font-size="17" fill="#D9C7B8">rebuilt as a game in five stages.</text>
+    <text class="sans" x="32" y="186" font-size="14" fill="#9C8A7C">Character select, boss fight, pixel hero</text>
+    <g class="mono" font-size="12" transform="translate(32 268)">
+      <rect width="84" height="26" rx="13" fill="#FFFFFF" fill-opacity=".07"/><text x="42" y="17" text-anchor="middle" fill="#E7ECF5">Three.js</text>
+      <rect x="92" width="98" height="26" rx="13" fill="#FFFFFF" fill-opacity=".07"/><text x="141" y="17" text-anchor="middle" fill="#E7ECF5">JavaScript</text>
+      <rect x="198" width="84" height="26" rx="13" fill="#FFFFFF" fill-opacity=".07"/><text x="240" y="17" text-anchor="middle" fill="#E7ECF5">HTML/CSS</text>
+    </g>
+
+    <!-- game screen -->
+    <g transform="translate(330 40)">
+      <rect width="246" height="236" rx="16" fill="#0E1A33" stroke="#FFFFFF" stroke-opacity=".1"/>
+      <!-- HUD level map -->
+      <rect x="0" y="0" width="246" height="40" rx="16" fill="#0B1220"/>
+      <rect x="0" y="24" width="246" height="16" fill="#0B1220"/>
+      <line x1="0" y1="40" x2="246" y2="40" stroke="#FF7A1A" stroke-width="2"/>
+      <g transform="translate(23 12)">
+        <line x1="8" y1="8" x2="192" y2="8" stroke="#FFFFFF" stroke-opacity=".3" stroke-dasharray="3 3"/>
+        <rect x="0" y="0" width="16" height="16" fill="#FFD43B"/>
+        <rect x="46" y="0" width="16" height="16" fill="#22304D" stroke="#FFFFFF" stroke-opacity=".35"><animate attributeName="fill" values="#22304D;#FFD43B;#FFD43B;#FFD43B;#FFD43B" keyTimes="0;.2;.4;.6;.8" calcMode="discrete" dur="6s" repeatCount="indefinite"/></rect>
+        <rect x="92" y="0" width="16" height="16" fill="#22304D" stroke="#FFFFFF" stroke-opacity=".35"><animate attributeName="fill" values="#22304D;#22304D;#FFD43B;#FFD43B;#FFD43B" keyTimes="0;.2;.4;.6;.8" calcMode="discrete" dur="6s" repeatCount="indefinite"/></rect>
+        <rect x="138" y="0" width="16" height="16" fill="#22304D" stroke="#FFFFFF" stroke-opacity=".35"><animate attributeName="fill" values="#22304D;#22304D;#22304D;#FFD43B;#FFD43B" keyTimes="0;.2;.4;.6;.8" calcMode="discrete" dur="6s" repeatCount="indefinite"/></rect>
+        <rect x="184" y="0" width="16" height="16" fill="#22304D" stroke="#FFFFFF" stroke-opacity=".35"><animate attributeName="fill" values="#22304D;#22304D;#22304D;#22304D;#FFD43B" keyTimes="0;.2;.4;.6;.8" calcMode="discrete" dur="6s" repeatCount="indefinite"/></rect>
+        <g transform="translate(0 -9)">
+          <g>
+            <animateTransform attributeName="transform" type="translate" values="0 0;46 0;92 0;138 0;184 0" keyTimes="0;.2;.4;.6;.8" calcMode="discrete" dur="6s" repeatCount="indefinite"/>
+            <rect x="4" y="0" width="8" height="2" fill="#E03131"/>
+            <rect x="4" y="2" width="8" height="3" fill="#FFD8A8"/>
+            <rect x="3" y="5" width="10" height="2" fill="#1C7ED6"/>
+          </g>
+        </g>
+      </g>
+
+      <!-- stars -->
+      <g fill="#FFD43B"><circle cx="30" cy="70" r="1.4"/><circle cx="208" cy="62" r="1.2"/><circle cx="222" cy="120" r="1.4"/><circle cx="40" cy="150" r="1"/><circle cx="64" cy="96" r="1"/></g>
+
+      <!-- island -->
+      <path d="M40 196 L206 196 L184 222 L62 222 Z" fill="#5C3A1E"/>
+      <path d="M32 190 L214 190 L206 200 L40 200 Z" fill="#40C057"/>
+      <path d="M62 190 L72 166 L82 190 Z" fill="#2F9E44"/><path d="M168 190 L178 160 L188 190 Z" fill="#2F9E44"/>
+      <path d="M150 190 L156 176 L162 190 Z" fill="#3BC9DB"/>
+
+      <!-- wish orb -->
+      <circle cx="126" cy="122" r="66" fill="url(#glow)"/>
+      <g class="bob">
+        <circle cx="126" cy="122" r="44" fill="url(#orb)" stroke="#0B1220" stroke-width="3"/>
+        <ellipse cx="110" cy="99" rx="12" ry="6" fill="#FFFFFF" fill-opacity=".8" transform="rotate(-25 110 99)"/>
+        <g fill="#E03131">
+          <path d="M116 112 l3 7 7 .5 -5.5 4.5 2 7 -6.5-4 -6.5 4 2-7 -5.5-4.5 7-.5z"/>
+          <path d="M140 118 l3 7 7 .5 -5.5 4.5 2 7 -6.5-4 -6.5 4 2-7 -5.5-4.5 7-.5z"/>
+          <path d="M126 132 l3 7 7 .5 -5.5 4.5 2 7 -6.5-4 -6.5 4 2-7 -5.5-4.5 7-.5z"/>
+        </g>
+      </g>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 126 122" to="360 126 122" dur="9s" repeatCount="indefinite"/><circle cx="196" cy="122" r="9" fill="#FF922B" stroke="#0B1220" stroke-width="2"/></g>
+
+      <text class="mono blink" x="123" y="228" font-size="10" font-weight="700" fill="#FFD43B" text-anchor="middle" letter-spacing="2">▶ PRESS START</text>
+    </g>
+  </g>
+</svg>
