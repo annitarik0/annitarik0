@@ -31,19 +31,21 @@ const tarik = {
 
 ## ✦ Things I've built
 
-<table>
-  <tr>
-    <td width="50%"><a href="https://github.com/annitarik0/studyspot-app"><img src="assets/card-studyspot.svg" alt="StudySpot: an iPhone app that finds the quietest places to study in Paris, with live seats and live decibels." width="100%" /></a></td>
-    <td width="50%"><a href="https://github.com/annitarik0/beach-time"><img src="assets/card-beach.svg" alt="Beach Time: a Flutter app that tells you if today is a perfect beach day, with tides, UV and an AI beach buddy." width="100%" /></a></td>
-  </tr>
-  <tr>
-    <td width="50%"><a href="https://github.com/annitarik0/PFE--ANNISTOCK---STOCK-MANAGEMENT"><img src="assets/card-annistock.svg" alt="ANNISTOCK: stock management web app, my Bachelor's final project, built with Laravel, MySQL and Chart.js." width="100%" /></a></td>
-    <td width="50%"><img src="assets/card-heartbeat.svg" alt="Heartbeat: a real-time heart-rate monitor with Arduino and biomedical sensors, my diploma project." width="100%" /></td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center"><a href="https://annitarik0.github.io/ecom-game-website/"><img src="assets/card-animequest.svg" alt="Anime Quest: my first website, an anime figure shop, rebuilt as a game with five stages, a Three.js title world and a pixel hero." width="50%" /></a></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="https://github.com/annitarik0/studyspot-app"><img src="assets/card-studyspot.svg" alt="StudySpot: an iPhone app that finds the quietest places to study in Paris, with live seats and live decibels." width="600" /></a>
+</p>
+<p align="center">
+  <a href="https://github.com/annitarik0/beach-time"><img src="assets/card-beach.svg" alt="Beach Time: a Flutter app that tells you if today is a perfect beach day, with tides, UV and an AI beach buddy." width="600" /></a>
+</p>
+<p align="center">
+  <a href="https://github.com/annitarik0/PFE--ANNISTOCK---STOCK-MANAGEMENT"><img src="assets/card-annistock.svg" alt="ANNISTOCK: stock management web app, my Bachelor's final project, built with Laravel, MySQL and Chart.js." width="600" /></a>
+</p>
+<p align="center">
+  <img src="assets/card-heartbeat.svg" alt="Heartbeat: a real-time heart-rate monitor with Arduino and biomedical sensors, my diploma project." width="600" />
+</p>
+<p align="center">
+  <a href="https://annitarik0.github.io/ecom-game-website/"><img src="assets/card-animequest.svg" alt="Anime Quest: my first website, an anime figure shop, rebuilt as a game with five stages, a Three.js title world and a pixel hero." width="600" /></a>
+</p>
 
 <p align="center">
   🌐 <b>See StudySpot live:</b> <a href="https://annitarik0.github.io/studyspot/">annitarik0.github.io/studyspot</a>, a 3D landing page where the city is an equaliser that goes quiet wherever you point.
