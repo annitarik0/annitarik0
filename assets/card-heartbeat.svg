@@ -14,7 +14,6 @@
       @keyframes beat { 0%, 100% { transform: scale(1); } 12% { transform: scale(1.25); } 24% { transform: scale(1); } 36% { transform: scale(1.15); } 50% { transform: scale(1); } }
       .led { animation: led 1s steps(1) infinite; }
       @keyframes led { 0%, 20% { opacity: 1; } 21%, 100% { opacity: .2; } }
-      @media (prefers-reduced-motion: reduce) { .ecg, .heart, .led { animation: none; } }
     </style>
   </defs>
   <g clip-path="url(#c)">

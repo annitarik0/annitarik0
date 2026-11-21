@@ -8,7 +8,6 @@
       .bye { opacity: 0; animation: bye 12s infinite; }
       .bye.b2 { animation-delay: 3s; } .bye.b3 { animation-delay: 6s; } .bye.b4 { animation-delay: 9s; }
       @keyframes bye { 0% { opacity: 0; } 4%, 21% { opacity: 1; } 25%, 100% { opacity: 0; } }
-      @media (prefers-reduced-motion: reduce) { .a, .b, .bye { animation: none; } .bye.b1 { opacity: 1; } }
     </style>
   </defs>
   <path class="b" d="M0 96 q80 -26 160 0 t160 0 t160 0 t160 0 t160 0 t160 0 t160 0 t160 0 t160 0 t160 0 V150 H0 Z" fill="url(#w)" fill-opacity=".18"/>

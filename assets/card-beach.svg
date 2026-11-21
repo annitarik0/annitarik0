@@ -14,7 +14,6 @@
       .gull { animation: fly 10s linear infinite; }
       @keyframes fly { from { transform: translate(260px, 70px); } to { transform: translate(640px, 40px); } }
       .score { animation: count 8s ease-out infinite; }
-      @media (prefers-reduced-motion: reduce) { .w1, .w2, .w3, .sun, .gull { animation: none; } }
     </style>
   </defs>
   <g clip-path="url(#c)">
