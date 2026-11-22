@@ -46,10 +46,10 @@
       <rect class="b" x="180" y="-64"  width="14" height="64"  rx="4" style="animation-delay:-1.7s"/>
       <rect class="b" x="200" y="-96"  width="14" height="96"  rx="4" style="animation-delay:-.5s"/>
       <line x1="-6" y1="1" x2="220" y2="1" stroke="#FFFFFF" stroke-opacity=".15"/>
-      <g class="pin" transform="translate(87 -176)">
+      <g transform="translate(87 -176)"><g class="pin">
         <path d="M0 0 C-14 0 -20 10 -20 18 C-20 30 0 46 0 46 C0 46 20 30 20 18 C20 10 14 0 0 0 Z" fill="#8FE3B0"/>
         <circle cx="0" cy="18" r="7" fill="#0B1220"/>
-      </g>
+      </g></g>
     </g>
     <g class="sans" font-weight="800" font-size="22" text-anchor="end">
       <text class="db" x="570" y="282" fill="#FF8A93">68 dB</text>

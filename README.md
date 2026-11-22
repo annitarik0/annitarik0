@@ -5,6 +5,7 @@
 <p align="center">
   <a href="https://annitarik0.github.io/studyspot/"><img src="https://img.shields.io/badge/Latest%20launch-StudySpot-0B1220?style=for-the-badge&labelColor=8FE3B0" alt="Latest launch: StudySpot" /></a>
   <img src="https://img.shields.io/badge/Next-Master's%20in%20AI-0B1220?style=for-the-badge&labelColor=B388FF" alt="Next: a Master's in AI" />
+  <a href="https://www.behance.net/tarikanni"><img src="https://img.shields.io/badge/Behance-tarikanni-0B1220?style=for-the-badge&logo=behance&logoColor=white&labelColor=1769FF" alt="Behance: tarikanni" /></a>
   <img src="https://komarev.com/ghpvc/?username=annitarik0&style=for-the-badge&color=4CC9F0&label=Profile%20views" alt="Profile views" />
 </p>
 

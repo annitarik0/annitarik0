@@ -150,9 +150,9 @@
 
     <!-- floating chips -->
     <g class="mono" font-size="13">
-      <g class="chip" transform="translate(1136 64)"><rect width="104" height="30" rx="15" fill="#0A0F1A" fill-opacity=".85" stroke="#7DE3FF" stroke-opacity=".4"/><text x="52" y="20" text-anchor="middle" fill="#7DE3FF">aws deploy</text></g>
-      <g class="chip b" transform="translate(760 250)"><rect width="104" height="30" rx="15" fill="#0A0F1A" fill-opacity=".85" stroke="#B388FF" stroke-opacity=".5"/><text x="52" y="20" text-anchor="middle" fill="#CDB6FF">model.fit()</text></g>
-      <g class="chip c" transform="translate(1118 262)"><rect width="122" height="30" rx="15" fill="#0A0F1A" fill-opacity=".85" stroke="#8FE3B0" stroke-opacity=".45"/><text x="61" y="20" text-anchor="middle" fill="#8FE3B0">npx expo start</text></g>
+      <g transform="translate(1136 64)"><g class="chip"><rect width="104" height="30" rx="15" fill="#0A0F1A" fill-opacity=".85" stroke="#7DE3FF" stroke-opacity=".4"/><text x="52" y="20" text-anchor="middle" fill="#7DE3FF">aws deploy</text></g></g>
+      <g transform="translate(760 250)"><g class="chip b"><rect width="104" height="30" rx="15" fill="#0A0F1A" fill-opacity=".85" stroke="#B388FF" stroke-opacity=".5"/><text x="52" y="20" text-anchor="middle" fill="#CDB6FF">model.fit()</text></g></g>
+      <g transform="translate(1118 262)"><g class="chip c"><rect width="122" height="30" rx="15" fill="#0A0F1A" fill-opacity=".85" stroke="#8FE3B0" stroke-opacity=".45"/><text x="61" y="20" text-anchor="middle" fill="#8FE3B0">npx expo start</text></g></g>
     </g>
 
     <!-- left: who -->

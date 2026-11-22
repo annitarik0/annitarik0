@@ -40,7 +40,7 @@
     <rect x="300.5" y="60.5" width="271" height="159" rx="12" fill="none" stroke="#FFFFFF" stroke-opacity=".1"/>
 
     <g transform="translate(300 236)">
-      <path class="heart" d="M14 4 C14 -2 6 -4 3 1 C0 -4 -8 -2 -8 4 C-8 10 3 16 3 16 C3 16 14 10 14 4 Z" fill="#FF4D5E" transform="translate(8 6)"/>
+      <g transform="translate(8 6)"><path class="heart" d="M14 4 C14 -2 6 -4 3 1 C0 -4 -8 -2 -8 4 C-8 10 3 16 3 16 C3 16 14 10 14 4 Z" fill="#FF4D5E"/></g>
       <text class="sans" x="40" y="22" font-size="26" font-weight="800" fill="#F5F7FB">72</text>
       <text class="mono" x="78" y="22" font-size="13" fill="#D6B8BC">BPM</text>
       <circle class="led" cx="262" cy="14" r="5" fill="#28C840"/>
