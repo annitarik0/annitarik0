@@ -82,6 +82,7 @@ const tarik = {
 
 <p align="center">
   <a href="mailto:annitarik9@gmail.com"><img src="https://img.shields.io/badge/annitarik9@gmail.com-0B1220?style=for-the-badge&logo=gmail&logoColor=white" alt="Email annitarik9@gmail.com" /></a>
+  <a href="https://www.behance.net/tarikanni"><img src="https://img.shields.io/badge/Behance-tarikanni-0B1220?style=for-the-badge&logo=behance&logoColor=white&labelColor=1769FF" alt="Behance: tarikanni" /></a>
 </p>
 <p align="center">Happy to talk about projects, AI programs or collaborations.</p>
 
